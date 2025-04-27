@@ -5,7 +5,7 @@ return {
   keys = {
     { "<leader>gb", "<cmd>Gitsigns blame_line<cr>" },
     { "<leader>gB", "<cmd>Gitsigns blame<cr>" },
-    { "<leader>gd", "<cmd>Gitsigns diffhis<cr>" },
+    { "<leader>gd", "<cmd>Gitsigns diffthis<cr>" },
     { "<leader>gtb", "<cmd>Gitsigns toggle_current_line_blame<cr>" },
     { "<leader>gtd", "<cmd>Gitsigns toggle_deleted<cr>" },
     { "<leader>gtl", "<cmd>Gitsigns toggle_linehl<cr>" },

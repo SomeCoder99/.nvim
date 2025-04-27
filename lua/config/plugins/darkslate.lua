@@ -5,7 +5,12 @@ return {
     priority = 1000,
     ---@module "darkslate"
     ---@type darkslate.opts
-    opts = { variant = "dark" },
+    opts = {
+      variant = "dark",
+      plugin = {
+        lualine = { brightness = -1 },
+      },
+    },
     config = function(_, opts)
       require("darkslate").setup(opts)
       vim.cmd.colorscheme("darkslate")
