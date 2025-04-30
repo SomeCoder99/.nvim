@@ -23,40 +23,43 @@ NVIM_APPNAME=SomeCoder99/.nvim/ nvim
 ## Plugins
 
 ### theme
-+ [SomeCoder99/darkslate.nvim](https://dotfyle.com/plugins/SomeCoder99/darkslate.nvim)
++ [SomeCoder99/darkslate.nvim](https://github.com/SomeCoder99/darkslate.nvim)
 
 ### picker
-+ [folke/snacks.nvim](https://dotfyle.com/plugins/folke/snacks.nvim)
++ [folke/snacks.nvim](https://github.com/folke/snacks.nvim)
 
 ### file-explorer
-+ [stevearc/oil.nvim](https://dotfyle.com/plugins/stevearc/oil.nvim)
++ [stevearc/oil.nvim](https://github.com/stevearc/oil.nvim)
 
 ### git
-+ [lewis6991/gitsigns.nvim](https://dotfyle.com/plugins/lewis6991/gitsigns.nvim)
++ [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 
 ### icon
-+ [nvim-tree/nvim-web-devicons](https://dotfyle.com/plugins/nvim-tree/nvim-web-devicons)
++ [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 
 ### lsp
-+ [neovim/nvim-lspconfig](https://dotfyle.com/plugins/neovim/nvim-lspconfig)
++ [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 
 ### motion
-+ [folke/flash.nvim](https://dotfyle.com/plugins/folke/flash.nvim)
++ [folke/flash.nvim](https://github.com/folke/flash.nvim)
 
 ### nvim-dev
-+ [folke/lazydev.nvim](https://dotfyle.com/plugins/folke/lazydev.nvim)
++ [folke/lazydev.nvim](https://github.com/folke/lazydev.nvim)
 
 ### plugin-manager
-+ [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
++ [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
 
 ### snippet
-+ [rafamadriz/friendly-snippets](https://dotfyle.com/plugins/rafamadriz/friendly-snippets)
++ [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
 
 ### statusline
-+ [nvim-lualine/lualine.nvim](https://dotfyle.com/plugins/nvim-lualine/lualine.nvim)
++ [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 
 ### syntax
-+ [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
++ [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+
+### utility
++ [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
 ## Language Servers
 + lua_ls

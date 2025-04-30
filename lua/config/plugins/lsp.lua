@@ -31,11 +31,12 @@ return {
     end,
 
     keys = {
-      { "]d", function() vim.diagnostic.jump { count = 1, float = { border = border } } end },
-      { "[d", function() vim.diagnostic.jump { count = -1, float = { border = border } } end },
+      { "]d", function() vim.diagnostic.jump { count = 1, float = { border = border } } end, desc = "Go To Next Diagnostic" },
+      { "[d", function() vim.diagnostic.jump { count = -1, float = { border = border } } end, desc = "Go To Previous Diagnostic" },
       { "K", function() vim.lsp.buf.hover { border = border, max_width = 80 } end },
-      { "<leader>cr", function() vim.lsp.buf.rename() end },
-      { "<leader>ca", function() vim.lsp.buf.code_action() end },
+      { "<leader>c", "", desc = "Code" },
+      { "<leader>cr", function() vim.lsp.buf.rename() end, desc = "Rename Symbol" },
+      { "<leader>ca", function() vim.lsp.buf.code_action() end, desc = "Code Action" },
     },
   },
 }

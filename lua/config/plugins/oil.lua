@@ -30,7 +30,7 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     lazy = false,
     keys = {
-      { "<leader>e", function() require("oil").toggle_float() end },
+      { "<leader>e", function() require("oil").toggle_float() end, desc = "File Explorer (oil.nvim)" },
     },
   }
 }
