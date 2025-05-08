@@ -37,8 +37,10 @@ NVIM_APPNAME=SomeCoder99/.nvim/ nvim
 ### icon
 + [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 
-### lsp
+### coding
 + [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
++ [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
++ [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
 
 ### motion
 + [folke/flash.nvim](https://github.com/folke/flash.nvim)
@@ -48,9 +50,6 @@ NVIM_APPNAME=SomeCoder99/.nvim/ nvim
 
 ### plugin-manager
 + [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
-
-### snippet
-+ [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
 
 ### statusline
 + [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)

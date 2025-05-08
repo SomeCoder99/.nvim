@@ -41,6 +41,7 @@ return {
           TypeParamter = "󰗴",
         },
       },
+
       sources = {
         default = { "lazydev", "lsp", "path", "snippets", "buffer" },
         providers = {
@@ -51,6 +52,7 @@ return {
           },
         },
       },
+
       keymap = {
         ["<cr>"] = { "accept", "fallback" },
         ["<up>"] = { "select_prev", "fallback" },
@@ -63,6 +65,7 @@ return {
         ["<tab>"] = { "snippet_forward", "fallback" },
         ["<s-tab>"] = { "snippet_backward", "fallback" },
       },
+
       completion = {
         accept = {
           auto_brackets = {
@@ -116,6 +119,7 @@ return {
           },
         },
       },
+
       signature = {
         enabled = true,
         window = {
@@ -126,6 +130,7 @@ return {
       },
     },
   },
+
   {
     "folke/lazydev.nvim",
     ft = "lua",

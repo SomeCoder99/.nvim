@@ -30,13 +30,19 @@ return {
               },
               { win = "list", border = { "", "", "", "│", "┴", "─", "└", "│" } },
             },
-            { win = "preview", title = "{preview}", border = { "", "─", "┐", "│", "┘", "─", "", "" }, width = 0.5 },
+            {
+              win = "preview",
+              title = "{preview}",
+              border = { "", "─", "┐", "│", "┘", "─", "", "" },
+              width = 0.5,
+            },
           },
         },
       },
     },
     quickfile = { enabled = true },
   },
+
   keys = {
     -- picker keymaps
     { "<leader>f", "", desc = "Find" },

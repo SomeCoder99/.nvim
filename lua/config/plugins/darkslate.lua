@@ -1,6 +1,6 @@
 return {
   {
-   "SomeCoder99/darkslate.nvim",
+    "SomeCoder99/darkslate.nvim",
     dev = false,
     priority = 1000,
     ---@module "darkslate"
@@ -22,7 +22,7 @@ return {
     dependencies = {
       "SomeCoder99/darkslate.nvim",
     },
-    opts = function (_, opts)
+    opts = function(_, opts)
       return require("darkslate.plugin.nvim_web_devicons").tweak_opts(opts)
     end,
   },

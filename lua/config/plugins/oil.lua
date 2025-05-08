@@ -1,6 +1,6 @@
 return {
   {
-    'stevearc/oil.nvim',
+    "stevearc/oil.nvim",
     ---@module 'oil'
     ---@type oil.SetupOpts
     opts = {
@@ -29,8 +29,15 @@ return {
     },
     dependencies = { "nvim-tree/nvim-web-devicons" },
     lazy = false,
+
     keys = {
-      { "<leader>e", function() require("oil").toggle_float() end, desc = "File Explorer (oil.nvim)" },
+      {
+        "<leader>e",
+        function()
+          require("oil").toggle_float()
+        end,
+        desc = "File Explorer (oil.nvim)",
+      },
     },
-  }
+  },
 }
