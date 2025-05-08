@@ -10,7 +10,31 @@ return {
   ---@type snacks.Config
   opts = {
     bigfile = { enabled = true },
-    picker = { enabled = true },
+    picker = {
+      enabled = true,
+      layouts = {
+        default = {
+          layout = {
+            box = "horizontal",
+            width = 0.8,
+            min_width = 120,
+            height = 0.8,
+            {
+              box = "vertical",
+              border = "none",
+              {
+                title = "{title} {live} {flags}",
+                win = "input",
+                height = 1,
+                border = { "┌", "─", "┬", "│", "┤", "─", "├", "│" },
+              },
+              { win = "list", border = { "", "", "", "│", "┴", "─", "└", "│" } },
+            },
+            { win = "preview", title = "{preview}", border = { "", "─", "┐", "│", "┘", "─", "", "" }, width = 0.5 },
+          },
+        },
+      },
+    },
     quickfile = { enabled = true },
   },
   keys = {
