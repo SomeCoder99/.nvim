@@ -64,3 +64,4 @@ NVIM_APPNAME=SomeCoder99/.nvim/ nvim
 + lua_ls
 + rust_analyzer
 + ccls
++ nushell
