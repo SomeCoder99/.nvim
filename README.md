@@ -45,6 +45,9 @@ NVIM_APPNAME=SomeCoder99/.nvim/ nvim
 ### motion
 + [folke/flash.nvim](https://github.com/folke/flash.nvim)
 
+### editing
++ [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)
+
 ### nvim-dev
 + [folke/lazydev.nvim](https://github.com/folke/lazydev.nvim)
 
