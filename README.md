@@ -53,8 +53,8 @@ NVIM_APPNAME=SomeCoder99/.nvim/ nvim
 ### plugin-manager
 + [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
 
-### ui
-+ [rebelot/heirline.nvim](https://github.com/rebelot/heirline.nvim)
+### statusline
++ [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 
 ### syntax
 + [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)

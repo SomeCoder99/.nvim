@@ -7,6 +7,9 @@ return {
     ---@type darkslate.opts
     opts = {
       variant = "dark",
+      plugin = {
+        lualine = { brightness = -1 },
+      },
     },
     config = function(_, opts)
       require("darkslate").setup(opts)
