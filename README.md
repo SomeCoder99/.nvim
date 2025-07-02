@@ -39,7 +39,6 @@ NVIM_APPNAME=SomeCoder99/.nvim/ nvim
 
 ### coding
 + [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
-+ [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 + [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
 
 ### motion
@@ -54,8 +53,8 @@ NVIM_APPNAME=SomeCoder99/.nvim/ nvim
 ### plugin-manager
 + [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
 
-### statusline
-+ [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+### ui
++ [rebelot/heirline.nvim](https://github.com/rebelot/heirline.nvim)
 
 ### syntax
 + [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
