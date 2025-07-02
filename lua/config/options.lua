@@ -11,3 +11,5 @@ vim.o.cursorline = true
 vim.o.undofile = true
 vim.o.scrolloff = 8
 vim.o.laststatus = 3
+vim.o.splitright = true
+vim.o.splitbelow = true
