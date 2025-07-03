@@ -54,7 +54,7 @@ NVIM_APPNAME=SomeCoder99/.nvim/ nvim
 + [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
 
 ### statusline
-+ [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
++ [rebelot/heirline.nvim](https://github.com/rebelot/heirline.nvim)
 
 ### syntax
 + [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
