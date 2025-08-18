@@ -1,9 +1,5 @@
 # My Neovim Config
 
-<a href="https://dotfyle.com/SomeCoder99/nvim"><img src="https://dotfyle.com/SomeCoder99/nvim/badges/plugins?style=flat" /></a>
-<a href="https://dotfyle.com/SomeCoder99/nvim"><img src="https://dotfyle.com/SomeCoder99/nvim/badges/leaderkey?style=flat" /></a>
-<a href="https://dotfyle.com/SomeCoder99/nvim"><img src="https://dotfyle.com/SomeCoder99/nvim/badges/plugin-manager?style=flat" /></a>
-
 ![Preview](https://github.com/SomeCoder99/.nvim/blob/main/images/preview.png)
 
 ## Install Instructions
