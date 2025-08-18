@@ -95,7 +95,7 @@ local theme = lush(function(injected_functions)
 
     sym"@constant" { fg = c.fg.da(10), bold = true },
     sym"@constant.builtin" { fg = c.fg, bold = true },
-    sym"@constant.macro" { fg = c.c.li(10).sa(30), bold = true },
+    sym"@constant.macro" { fg = c.c.li(10).sa(-10) },
 
     sym"@module" { fg = c.y },
     sym"@module.builtin" { fg = c.y.li(10) },
@@ -106,7 +106,7 @@ local theme = lush(function(injected_functions)
     sym"@string.documentation" { fg = c.g.sa(-50).li(25).ro(20) },
     sym"@string.regexp" { fg = c.g.li(20).mix(c.y, 65) },
     sym"@string.escape" { fg = SpecialKey.fg.da(30).ro(-30) },
-    sym"@string.special" { fg = c.g.mix(c.c, 75).li(10).sa(20) },
+    sym"@string.special" { fg = c.g.mix(c.c, 75).sa(20) },
     sym"@string.special.symbol" { fg = c.fg.da(30).sa(50).mix(c.c, 50) },
     sym"@string.special.path" { fg = c.g.mix(c.y, 60).sa(10).da(15) },
     sym"@string.special.url" { sym"@string.special.symbol", sp = c.c, undercurl = true },
@@ -130,7 +130,7 @@ local theme = lush(function(injected_functions)
     sym"@function" { fg = c.b.da(15) },
     sym"@function.builtin" { fg = c.b.li(10) },
     sym"@function.call" { fg = c.b },
-    sym"@function.macro" { fg = c.c.li(10).sa(20).ro(10) },
+    sym"@function.macro" { fg = c.c },
     sym"@function.method" { fg = sym"@function".fg.mix(c.p, 40) },
     sym"@function.method.call" { fg = sym"@function.call".fg.mix(c.p, 40) },
 
@@ -314,7 +314,7 @@ local theme = lush(function(injected_functions)
     BlinkCmpMenuSelection { PmenuSel },
     BlinkCmpMenuScrollBarGutter { PmenuSbar },
     BlinkCmpMenuScrollBarThumb { PmenuThumb },
-    BlinkCmpMenuLabel = { fg = c.fg.da(30) },
+    BlinkCmpMenuLabel { fg = c.fg.da(30) },
     BlinkCmpLabelDeprecated { DiagnosticDeprecated },
     BlinkCmpLabelMatch { PmenuMatch },
     BlinkCmpLabelDetail { Comment },
@@ -333,7 +333,7 @@ local theme = lush(function(injected_functions)
     FlashBackdrop { Comment },
     FlashMatch { Search },
     FlashCurrent { IncSearch },
-    FlashLabel { bg = Search.bg.da(60), fg = c.b.li(20).sa(50) },
+    FlashLabel { bg = Search.bg.da(60), fg = c.b.li(20).sa(20) },
     FlashPrompt { fg = c.y.da(20).sa(-80) },
     FlashPromptIcon { Question },
 
@@ -349,7 +349,7 @@ local theme = lush(function(injected_functions)
     SnacksPickerMatch { fg = c.fg.mix(c.y, 60), sp = c.fg.da(15), underline = true },
     SnacksPickerPrompt { fg = Question.fg },
     SnacksPickerRegister { fg = c.g },
-    SnacksPickerSelected { fg = c.b.li(20).sa(50) },
+    SnacksPickerSelected { fg = c.b.li(10).sa(20) },
     SnacksPickerBufFlags { fg = c.b.mix(c.y, 70).li(20).sa(10) },
     SnacksPickerBufNr { fg = c.o.li(10) },
     SnacksPickerKeymapMode { fg = c.r },
@@ -363,6 +363,7 @@ local theme = lush(function(injected_functions)
     SnacksPickerAuPattern { sym"@string.regexp" },
     SnacksPickerCmd { fg = sym"@function".fg.li(10).sa(10) },
     SnacksPickerCmdBuiltin { fg = SnacksPickerCmd.fg.li(20) },
+    SnacksPickerTotals { fg = NormalFloat.bg.li(20).sa(20) },
 
     OilHidden { fg = c.fg.da(50), italic = true },
     OilDir { Directory },
