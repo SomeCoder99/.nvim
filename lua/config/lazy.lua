@@ -26,6 +26,6 @@ require("lazy").setup {
   checker = { enabled = false },
   change_detection = { enabled = false },
   dev = {
-    path = "~/Projects/nvim",
+    path = "~/projects/nvim",
   },
 } --[[@as LazyConfig]]

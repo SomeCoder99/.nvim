@@ -4,12 +4,13 @@ return {
     opts = {
       formatters_by_ft = {
         lua = { "stylua" },
+        rust = { "rustfmt" },
       },
       formatters = {
         stylua = {
           -- stylua: ignore
           prepend_args = {
-            "--call-parentheses", "NoSingleTable",
+            "--call-parentheses", "Input",
             "--column-width", "100",
             "--indent-type", "Spaces",
             "--indent-width", "2",

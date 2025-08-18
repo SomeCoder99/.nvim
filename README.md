@@ -23,7 +23,7 @@ NVIM_APPNAME=SomeCoder99/.nvim/ nvim
 ## Plugins
 
 ### theme
-+ [SomeCoder99/darkslate.nvim](https://github.com/SomeCoder99/darkslate.nvim)
++ deepblue (created with [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim)
 
 ### picker
 + [folke/snacks.nvim](https://github.com/folke/snacks.nvim)
@@ -46,6 +46,7 @@ NVIM_APPNAME=SomeCoder99/.nvim/ nvim
 
 ### editing
 + [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)
++ [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 
 ### nvim-dev
 + [folke/lazydev.nvim](https://github.com/folke/lazydev.nvim)
@@ -53,14 +54,16 @@ NVIM_APPNAME=SomeCoder99/.nvim/ nvim
 ### plugin-manager
 + [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
 
-### statusline
-+ [rebelot/heirline.nvim](https://github.com/rebelot/heirline.nvim)
+### ui
++ [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
++ [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
 
 ### syntax
 + [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
 ### utility
 + [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
++ [norcalli/nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua)
 
 ## Language Servers
 + lua_ls

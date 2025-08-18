@@ -1,3 +1,5 @@
+local border = { "🭽", "▔", "🭾", "▕", "🭿", "▁", "🭼", "▏" }
+
 return {
   {
     "stevearc/oil.nvim",
@@ -12,10 +14,13 @@ return {
         show_hidden = true,
       },
       float = {
-        border = "single",
+        border = { " ", " ", " ", " ", " ", " ", " ", " " },
+        win_options = {
+          winhighlight = "EndOfBuffer:FloatEndOfBuffer",
+        },
       },
       confirmation = {
-        border = "single",
+        border = border,
       },
       progress = {
         border = "single",
@@ -24,7 +29,7 @@ return {
         border = "single",
       },
       keymaps_help = {
-        border = "single",
+        border = border,
       },
     },
     dependencies = { "nvim-tree/nvim-web-devicons" },

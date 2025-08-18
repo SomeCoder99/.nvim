@@ -1,4 +1,4 @@
-local border = "single"
+local border = { "🭽", "▔", "🭾", "▕", "🭿", "▁", "🭼", "▏" }
 
 return {
   {
@@ -9,7 +9,6 @@ return {
         lua_ls = {},
         rust_analyzer = {},
         ccls = {},
-        nushell = {},
       },
     },
     config = function(_, opts)
