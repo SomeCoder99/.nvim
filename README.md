@@ -19,7 +19,7 @@ NVIM_APPNAME=SomeCoder99/.nvim/ nvim
 ## Plugins
 
 ### theme
-+ deepblue (created with [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim)
++ deepblue (created with [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim))
 
 ### picker
 + [folke/snacks.nvim](https://github.com/folke/snacks.nvim)
