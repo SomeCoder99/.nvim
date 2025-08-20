@@ -60,8 +60,9 @@ NVIM_APPNAME=SomeCoder99/.nvim/ nvim
 ### utility
 + [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 + [norcalli/nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua)
++ [alex-popov-tech/store.nvim](https://github.com/alex-popov-tech/store.nvim)
 
 ## Language Servers
-+ lua_ls
++ emmylua_ls
 + rust_analyzer
 + ccls
