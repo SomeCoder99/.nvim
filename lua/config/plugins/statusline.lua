@@ -45,20 +45,9 @@ return {
           lualine_b = { "branch", "diff", "diagnostics" },
           lualine_c = {
             {
-              "filetype",
-              padding = { left = 1, right = 0 },
-              icon_only = true,
-              cond = function()
-                return vim.bo.ft ~= "oil"
-              end,
-            },
-            {
               "filename",
-              padding = { left = 0, right = 1 },
+              padding = { left = 1, right = 1 },
               newfile_status = false,
-              cond = function()
-                return vim.bo.ft ~= "oil"
-              end,
               symbols = {
                 modified = " ",
                 readonly = " ",

@@ -6,7 +6,7 @@ return {
     lazy = false,
     opts = {
       servers = {
-        lua_ls = {},
+        emmylua_ls = {},
         rust_analyzer = {},
         ccls = {},
       },

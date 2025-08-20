@@ -16,7 +16,7 @@ return {
       float = {
         border = { " ", " ", " ", " ", " ", " ", " ", " " },
         win_options = {
-          winhighlight = "EndOfBuffer:FloatEndOfBuffer",
+          winhighlight = "EndOfBuffer:FloatEndOfBuffer,CursorLine:FloatCursorLine",
         },
       },
       confirmation = {

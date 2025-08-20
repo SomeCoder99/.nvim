@@ -137,12 +137,17 @@ return {
     "folke/lazydev.nvim",
     ft = "lua",
     opts = {
-      library = {
-        { path = "${3rd}/luv/library", words = { "vim%.uv" } },
-      },
+      library = {},
       enabled = function(root_dir)
         return not vim.uv.fs_stat(root_dir .. "/.luarc.json")
       end,
     },
+    config = function(_, opts)
+      local supported_clients = { "lua_ls", "emmylua_ls" }
+      require("lazydev.lsp").supports = function(client)
+        return client and vim.tbl_contains(supported_clients, client.name)
+      end
+      require("lazydev").setup(opts)
+    end,
   },
 }

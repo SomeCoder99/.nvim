@@ -3,6 +3,7 @@ local colors_name = "deepblue"
 vim.g.colors_name = colors_name
 
 local lush = require "lush"
+package.loaded["config.palette"] = nil
 local c = require "config.palette"
 
 local win = { sa = 2, li = 3 }
@@ -43,6 +44,7 @@ local theme = lush(function(injected_functions)
     FloatTitle { NormalFloat, fg = c.fg.li(10 + win.li / 2).sa(win.sa + 10).mix(c.b, 70), bold = true },
     FloatFooter { NormalFloat, fg = c.fg.li(5 + win.li / 4).sa(win.sa + 5) },
     FloatEndOfBuffer { bg = NormalFloat.bg, fg = NormalFloat.bg },
+    FloatCursorLine { bg = NormalFloat.bg.li(2).sa(4).ro(-5) },
 
     Pmenu { bg = c.bg.li(menu.li).sa(menu.sa), fg = c.fg.li(menu.li / 2) },
     PmenuSel { bg = Pmenu.bg.li(8).sa(3) },
@@ -84,14 +86,14 @@ local theme = lush(function(injected_functions)
     QuickFixLine { fg = c.r },
 
     WarningMsg { fg = c.warn },
-    ErrorMessage { fg = c.err },
+    ErrorMsg { fg = c.err },
     Error { bg = c.err.da(65).sa(-20).ro(-35) },
 
     sym"@variable" { fg = c.fg },
     sym"@variable.builtin" { fg = c.fg.li(10) },
     sym"@variable.parameter" { fg = c.r },
     sym"@variable.parameter.builtin" { fg = c.r.li(10) },
-    sym"@variable.member" { fg = c.fg.da(30) },
+    sym"@variable.member" { fg = c.fg.da(30).sa(10) },
 
     sym"@constant" { fg = c.fg.da(10), bold = true },
     sym"@constant.builtin" { fg = c.fg, bold = true },
@@ -105,7 +107,7 @@ local theme = lush(function(injected_functions)
     sym"@string" { fg = c.g },
     sym"@string.documentation" { fg = c.g.sa(-50).li(25).ro(20) },
     sym"@string.regexp" { fg = c.g.li(20).mix(c.y, 65) },
-    sym"@string.escape" { fg = SpecialKey.fg.da(30).ro(-30) },
+    sym"@string.escape" { fg = SpecialKey.fg.da(25).ro(-30) },
     sym"@string.special" { fg = c.g.mix(c.c, 75).sa(20) },
     sym"@string.special.symbol" { fg = c.fg.da(30).sa(50).mix(c.c, 50) },
     sym"@string.special.path" { fg = c.g.mix(c.y, 60).sa(10).da(15) },
@@ -119,9 +121,9 @@ local theme = lush(function(injected_functions)
     sym"@number" { fg = c.fg.mix(c.o, 50).li(10) },
     sym"@number.float" { fg = sym"@number".fg.da(15).sa(-20) },
 
-    sym"@type" { fg = c.o.li(10) },
-    sym"@type.builtin" { fg = c.o.li(20) },
-    sym"@type.definition" { fg = c.o.sa(20).da(-15) },
+    sym"@type" { fg = c.o },
+    sym"@type.builtin" { fg = c.o.li(10) },
+    sym"@type.definition" { fg = c.o.sa(20) },
 
     sym"@attribute" { fg = c.g },
     sym"@attribute.builtin" { fg = c.g.li(10) },
@@ -131,14 +133,14 @@ local theme = lush(function(injected_functions)
     sym"@function.builtin" { fg = c.b.li(10) },
     sym"@function.call" { fg = c.b },
     sym"@function.macro" { fg = c.c },
-    sym"@function.method" { fg = sym"@function".fg.mix(c.p, 40) },
-    sym"@function.method.call" { fg = sym"@function.call".fg.mix(c.p, 40) },
+    sym"@function.method" { fg = sym"@function".fg.mix(c.p, 50) },
+    sym"@function.method.call" { fg = sym"@function.call".fg.mix(c.p, 50) },
 
     sym"@constructor" { fg = c.fg.da(45).sa(10) },
     sym"@operator" { fg = c.fg.da(30) },
     sym"@punctuation" { fg = c.fg.da(45) },
     sym"@punctuation.bracket" { fg = c.fg.da(35) },
-    sym"@punctuation.special" { fg = sym"@punctuation".fg.mix(c.c, 70).li(10) },
+    sym"@punctuation.special" { fg = sym"@punctuation".fg.mix(c.c, 50).li(10) },
 
     sym"@keyword" { fg = c.p },
     sym"@keyword.coroutine" { fg = c.p },
@@ -147,11 +149,11 @@ local theme = lush(function(injected_functions)
     sym"@keyword.debug" { fg = c.p },
     sym"@keyword.conditional" { fg = c.p },
     sym"@keyword.conditional.ternary" { fg = c.p.da(10).sa(-30) },
-    sym"@keyword.directive" { fg = c.p.mix(c.c, 60).li(10) },
+    sym"@keyword.directive" { fg = c.p.mix(c.c, 60).sa(10) },
     sym"@keyword.function" { fg = c.p.li(10).mix(c.b, 40) },
     sym"@keyword.import" { fg = c.p.li(10) },
-    sym"@keyword.type" { fg = c.p.li(10).mix(c.o, 40) },
-    sym"@keyword.directive.define" { fg = c.p.mix(c.c, 70).li(20) },
+    sym"@keyword.type" { fg = c.p.li(10).mix(c.o, 25) },
+    sym"@keyword.directive.define" { fg = c.p.mix(c.c, 60).li(10) },
     sym"@keyword.operator" { fg = c.p.li(20) },
     sym"@keyword.exception" { fg = c.p.li(20).mix(c.r, 40) },
 
@@ -415,7 +417,7 @@ local theme = lush(function(injected_functions)
     WhichKeyDesc { fg = c.fg.li(win.li / 2 - 10) },
     WhichKeyGroup { fg = c.p, bold = true },
     WhichKeyIcon { fg = c.fg.da(30).sa(30) },
-    WhichKeyIconAzure { fg = c.b.sa(40) },
+    WhichKeyIconAzure { fg = c.b.sa(30) },
     WhichKeyIconBlue { fg = c.b },
     WhichKeyIconCyan { fg = c.c },
     WhichKeyIconGreen { fg = c.g },
